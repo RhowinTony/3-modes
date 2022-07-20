@@ -1,3 +1,12 @@
+def factorial(number):
+    i = 1
+    while number > 0:
+        i = i*number
+        number = number - 1
+    return i
+
+
+
 def main():
     try:
         selectionmode, input_type = getuserinput("main")
