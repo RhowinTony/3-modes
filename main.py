@@ -5,6 +5,16 @@ def factorial(number):
         number = number - 1
     return i
 
+def palindrome(value):
+    i = 0
+    length = len(value)
+    inpu = list(value)
+    output = []
+    while length > 0:
+        i = i - 1
+        length = length - 1
+        output.append(value[i])
+    return output == inpu
 
 
 def main():
