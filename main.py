@@ -16,7 +16,20 @@ def palindrome(value):
         output.append(value[i])
     return output == inpu
 
-
+def fibonacci(converted_number):
+    x = [0,1,]     
+    output = []
+    if converted_number == 1:
+        return [0]
+    elif converted_number == 2:
+        return [0,1]    
+    else:
+        while converted_number > 2:
+            output = x[-1] + x[-2]
+            x.append(output)
+            converted_number = converted_number - 1
+        return x
+     
 def main():
     try:
         selectionmode, input_type = getuserinput("main")
@@ -54,3 +67,10 @@ def getuserinput(input_type:str):
     else:
         raise RuntimeError("Please enter valid input type one of -[main, positive_integer, string]")  
     return con_reqd, input_type
+
+
+if __name__ == "__main__":
+    main()
+
+        
+            
