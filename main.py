@@ -69,8 +69,8 @@ def getuserinput(input_type:str):
     return con_reqd, input_type
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
 
         
             
