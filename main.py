@@ -1,34 +1,34 @@
-def factorial(number):
-    i = 1
-    while number > 0:
-        i = i*number
-        number = number - 1
-    return i
+# def factorial(number):
+#     i = 1
+#     while number > 0:
+#         i = i*number
+#         number = number - 1
+#     return i
 
-def palindrome(value):
-    i = 0
-    length = len(value)
-    inpu = list(value)
-    output = []
-    while length > 0:
-        i = i - 1
-        length = length - 1
-        output.append(value[i])
-    return output == inpu
+# def palindrome(value):
+#     i = 0
+#     length = len(value)
+#     inpu = list(value)
+#     output = []
+#     while length > 0:
+#         i = i - 1
+#         length = length - 1
+#         output.append(value[i])
+#     return output == inpu
 
-def fibonacci(converted_number):
-    x = [0,1,]     
-    output = []
-    if converted_number == 1:
-        return [0]
-    elif converted_number == 2:
-        return [0,1]    
-    else:
-        while converted_number > 2:
-            output = x[-1] + x[-2]
-            x.append(output)
-            converted_number = converted_number - 1
-        return x
+# def fibonacci(converted_number):
+#     x = [0,1,]     
+#     output = []
+#     if converted_number == 1:
+#         return [0]
+#     elif converted_number == 2:
+#         return [0,1]    
+#     else:
+#         while converted_number > 2:
+#             output = x[-1] + x[-2]
+#             x.append(output)
+#             converted_number = converted_number - 1
+#         return x
      
 def main():
     try:
